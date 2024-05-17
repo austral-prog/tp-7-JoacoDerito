@@ -16,3 +16,5 @@ def enumerate_backwards(list):
             indice += 1
     return resultado
 colores = ["Red", "Green", "", "White", "Black"]
+print(enumerate_list(colores))
+print(enumerate_backwards(colores))  
