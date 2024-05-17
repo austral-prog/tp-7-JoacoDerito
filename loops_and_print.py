@@ -1,6 +1,20 @@
 def enumerate_list(list):
-    return list
-
-
+    resultado= []
+    indice = 0
+    for i in list:
+        if i: 
+            resultado.append(f"{indice}. {i}")
+            indice += 1
+    return resultado
 def enumerate_backwards(list):
-    return list
+    resultado = []
+    indice = 0
+    for i in list:
+        if i:  
+            inversa = i[::-1]
+            resultado.append(f"{indice}. {inversa}")
+            indice += 1
+    return resultado
+colores = ["Red", "Green", "", "White", "Black"]
+print(enumerate_list(colores))
+print(enumerate_backwards(colores))  
